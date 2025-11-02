@@ -5,7 +5,7 @@ import SubjectiveQuiz from "./components/SubjectiveQuiz";
 import SocialMedia from "./components/SocialMedia";
 import GetPass from "./components/GetPass";
 
-const WorkshopLanding = () => {
+const App= () => {
   // --- persistent state ---
   const [userEmail, setUserEmail] = useState("");
   const [showObjective, setShowObjective] = useState(false);
@@ -101,4 +101,4 @@ const WorkshopLanding = () => {
 
 
 
-export default WorkshopLanding;
+export default App;

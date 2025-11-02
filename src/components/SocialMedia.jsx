@@ -8,9 +8,9 @@ const SocialMedia = () => {
         📲  Follow Our Social Media Pages
  
       </h2>
-      <p className="text-gray-700 mb-6 text-center max-w-lg grid grid-flow-col gap-2">
+      <div className="text-gray-700 mb-6 text-center max-w-lg grid grid-flow-col gap-2">
         <h1 className="font-semibold"> 🌐 Website: </h1> <a href="www.updats.in">www.updats.in</a>
-      </p>
+      </div>
       <div className="flex gap-6 text-3xl text-blue-400">
         <a
           href="https://www.instagram.com/yourhandle"
