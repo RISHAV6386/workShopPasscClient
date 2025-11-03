@@ -36,7 +36,10 @@ const GetPass = ({ userEmail }) => {
   const handleDownloadPDF = async () => {
     try {
       const node = passRef.current;
-      const dataUrl = await domtoimage.toPng(node);
+      // const dataUrl = await domtoimage.toJpeg(node, { quality: 0.6 }); // 60% quality JPEG
+      const dataUrl = await domtoimage.toJpeg(node, { quality: 0.6, style: { transform: "scale(0.8)", transformOrigin: "top left" } });
+
+
       const pdf = new jsPDF("portrait", "pt", "a4");
 
       const imgWidth = 500;
